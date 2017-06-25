@@ -8,11 +8,15 @@ public class JobBLL {
 		{
 			return "Failed";
 		}
+		
+		else if (job.desc.equals(" "))
+		{
+			return "failed";
+		}
 		else
 		{
 			return "Success";
 		}
-	
 	}
 
 }
